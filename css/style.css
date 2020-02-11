@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.eot');
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.header{
+	background: #08080c;
+	position: relative;
+    z-index: 1
+}
+.header_nav{
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+}
+.logo{
+	position: absolute;
+    top: 0;
+    left: 0;
+}
+nav ul li{
+	display: inline-block;
+	padding-left: 34px;
+	padding-top: 1.63em;
+	padding-bottom: 1.75em;
+}
+nav ul li a{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.13rem;
+}
+.slideshow{
+	background-image: url(../images/bg.png);
+	background-size: cover;
+    width: 100%;
+    position: absolute;
+    top: 0
+}
+.slideshow:after{
+	display: block;
+	content: '';
+	position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,0.7);
+    z-index: 0;
+}
+.slideshow_main{
+	max-width: 1035px;
+	margin: auto;
+	padding-top: 15.75rem;
+	padding-bottom: 13.31rem;
+}
+.slideshow h1{
+	text-align: center;
+	padding-bottom: 53px;
+	font-weight: 900;
+	color: #fff;
+	font-size: 1.88rem;
+}
+.slideshow span{
+	font-weight: 900;
+	color: #ff0036;
+}
+.slideshow p{
+	text-align: center;
+	color: #fff;
+	font-size: 1rem;
+	font-family: 'Lato';
+	padding-bottom: 3.25rem;
+}
+.slideshow_btn{
+	text-align: center;
+}
+.slideshow_btn a{
+	display: inline-block;
+	text-align: center;
+	font-size: 1.25rem;
+	background: #ff0036;
+	min-width: 10.63rem;
+	line-height: 3.12rem;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0 1rem;
+}
+.slideshow_btn a:nth-child(2){
+	background: #131313;	
+}
